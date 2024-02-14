@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+.container-fluid {
+    background: linear-gradient(rgb(39, 39, 39) 0%, rgb(90, 33, 155) 50%, rgba(39, 39, 39) 100%) 0 0/100% 200%;
+    animation: bg 7.5s linear infinite;
+}
+div[id="alertMessage"] {
+    opacity: 0.6;
+    font-size: 1.25em;
+    font-weight: bold;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    background-color: rgb(22, 22, 22);
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+@keyframes bg {
+  to {background-position:0 -200%}
+}
+
+#consoleContent {
+    border-width: 0px;
+    border-radius: 5px;
+    background-color: rgb(31, 31, 31);
+}
+#consoleContent .panel-heading {
+    background-color: rgb(17, 17, 17);
+    padding: bottom;
+    top: 1px;
+}
+#glyphicon-consoleImg {
+    top: 3px;
+    right: 3px;
+    color: rgb(255, 255, 255);
+}
+#panel-title {
+    color: rgb(255, 255, 255);
+    font-size: 1.35em;
+    font-weight: bold;
+}
+#consoleContent .panel-body {
+    background-color: rgb(31, 31, 31);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#consoleCommand {
+    border-width: 0px;
+}
+#consoleCommand .input-group-addon {
+    background-color: rgb(17, 17, 17);
+    border-color: rgb(17, 17, 17);
+}
+#chkAutoScroll {
+    accent-color: white;
+}
+#glyphicon-autoScroll {
+    left: 1px;
+    color: white;
+}
+#txtCommand {
+    border-width: 0px;
+    color: white;
+    background-color: rgb(26, 26, 26);
+}
+#txtCommand:focus {
+    border-width: 0px;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    box-shadow: none;
+}
+#txtCommandResults {
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-button {
+    height: 0px;
+}
