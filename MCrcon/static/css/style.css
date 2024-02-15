@@ -95,12 +95,6 @@ html, body {
   white-space: nowrap;
   padding: 2px 12px;
 }
-.ui-autocomplete > li:hover {
-  color: rgb(0, 0, 0);
-}
-.ui-state-active {
-  background-color: #111111;
-}
 .ui-helper-hidden-accessible {
   display: none;
 }
